@@ -1,253 +1,297 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-bs-theme="light">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="verdoit, raphael, raphael verdoit, verdoit raphael, administrateur reseau, bts sio sisr">
-    <meta name="google-site-verification" content="pHYRCSW7wICGoJ8FyfOogk0T9PrQxTYuIfRCYOwh7Ac" />
-    <title>Raphaël Verdoit - Administrateur Système et Réseau</title>
+    <meta name="description" content="Portfolio de Raphaël Verdoit, étudiant en BTS SIO SISR. Administrateur Système et Réseau.">
+    <meta name="author" content="Raphaël Verdoit">
+    <title>Raphaël Verdoit | Admin Sys & Réseau</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow-sm">
         <div class="container">
-            <div class="nav-content">
-                <ul class="nav-links">
-                    <h1 class="logo">Raphaël Verdoit</h1>
-                    <li><a href="#home" class="nav-link active">Accueil</a></li>
-                    <li><a href="#about" class="nav-link">À Propos</a></li>
-                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-                    <li><a href="#cv" class="nav-link">CV</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
-                        <span class="theme-icon">🌙</span>
-                    </button>
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-terminal-fill me-2"></i>R. Verdoit
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#career">Parcours</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-light ms-lg-3 btn-sm" href="#contact">Contact</a></li>
+                    <li class="nav-item ms-2">
+                        <button class="btn btn-link nav-link" id="themeToggle"><i class="bi bi-moon-stars-fill"></i></button>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
+    <header id="home" class="py-5 bg-gradient-primary text-white text-center d-flex align-items-center" style="min-height: 80vh;">
         <div class="container">
-            <div class="hero-content">
-                <h2 class="hero-title">Futur Administrateur Système et Réseau</h2>
-                <p class="hero-subtitle">Étudiant en BTS SIO option SISR, passionné par l'infrastructure IT et les
-                    solutions réseau. Actuellement en alternance, je cherche à développer mes compétences en gestion de
-                    systèmes et d'environnements d'entreprise.</p>
-                <div class="hero-buttons">
-                    <a href="#portfolio" class="btn btn-primary">Voir mes projets</a>
-                    <a href="#contact" class="btn btn-secondary">Me contacter</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <h2 class="section-title">À Propos</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3>Qui suis-je?</h3>
-                    <p>Je suis un étudiant motivé en BTS SIO (Services Informatiques aux Organisations) avec une
-                        spécialisation en SISR (Solutions d'Infrastructure, Systèmes et Réseaux). Ma passion pour
-                        l'infrastructure IT m'a poussé à explorer les domaines de l'administration système, de la
-                        gestion des réseaux et de la virtualisation.</p>
-                </div>
-                <div class="skills">
-                    <h3>Domaines de Compétences</h3>
-                    <div class="skills-grid">
-                        <div class="skill-card">
-                            <h4>🖥️ Systèmes</h4>
-                            <p>Linux, Virtualisation (VirtualBox)...</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>🌐 Réseaux</h4>
-                            <p>Configuration réseau, Routage, Switching, Sécurité réseau, VPN</p>
-                        </div>
-                        <div class="skill-card">
-                            <h4>💻 Programmation</h4>
-                            <p>Python, PowerShell, Bash, SQL, HTML/CSS/JavaScript</p>
-                        </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="badge bg-info text-dark mb-3">Recherche Alternance / Stage</div>
+                    <h1 class="display-3 fw-bold mb-3">Raphaël Verdoit</h1>
+                    <h2 class="h3 mb-4 fw-light">Futur Administrateur Système et Réseau</h2>
+                    <p class="lead mb-5 opacity-75">Étudiant en BTS SIO option SISR. Passionné par la virtualisation, la sécurité réseau et l'automatisation.</p>
+                    <div class="d-flex justify-content-center gap-3">
+                        <a href="#projects" class="btn btn-light btn-lg px-4">Voir mes Projets</a>
+                        <a href="CV_Raphael_Verdoit.pdf" target="_blank" class="btn btn-outline-light btn-lg px-4"><i class="bi bi-file-earmark-pdf me-2"></i>Mon CV</a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </header>
 
-
-    <!-- CV Section -->
-    <section id="cv" class="cv">
+    <section id="skills" class="py-5">
         <div class="container">
-            <h2 class="section-title">Curriculum Vitae</h2>
-            <div class="cv-grid">
-                <div class="cv-column">
-                    <h3 class="cv-subtitle">Formation</h3>
-                    <div class="cv-item">
-                        <h4>BTS Services Informatiques aux Organisations</h4>
-                        <p class="cv-meta">Option SISR | Septembre 2025 - Juillet 2027</p>
-                        <p class="cv-description">Lycée Professionnel - Spécialisation en Solutions d'Infrastructure,
-                            Systèmes et Réseaux</p>
-                    </div>
-                    <div class="cv-item">
-                        <h4>Baccalauréat Professionnel Systèmes Numériques</h4>
-                        <p class="cv-meta">Septembre 2022 - Juillet 2025</p>
-                        <p class="cv-description">Lycée Professionnel - Mention Bien</p>
-                    </div>
-                </div>
-
-                <div class="cv-column">
-                    <h3 class="cv-subtitle">Expériences Professionnelles</h3>
-                    <div class="cv-item">
-                        <h4>Administrateur Système en Alternance</h4>
-                        <p class="cv-meta">Depuis Septembre 2024</p>
-                        <p class="cv-description">Entreprise IT - Gestion de l'infrastructure, support utilisateurs,
-                            maintenance des serveurs</p>
-                    </div>
-                    <div class="cv-item">
-                        <h4>Stagiaire Administrateur Réseau</h4>
-                        <p class="cv-meta">Juin - Août 2023</p>
-                        <p class="cv-description">Entreprise Telecom - Configuration réseau, support technique,
-                            documentation</p>
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Domaines de Compétences</h2>
+                <div class="header-line bg-primary mx-auto"></div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm skill-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-primary bg-opacity-10 text-primary mb-3 mx-auto">
+                                <i class="bi bi-pc-display-horizontal fs-2"></i>
+                            </div>
+                            <h4 class="card-title">Systèmes & Virtualisation</h4>
+                            <p class="card-text text-muted">Administration et déploiement d'environnements.</p>
+                            <ul class="list-unstyled text-start bg-light p-3 rounded">
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Windows Server (AD, DNS, DHCP)</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Linux (Debian, Ubuntu)</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>VirtualBox, VMware</li>
+                                <li><i class="bi bi-check2 text-primary me-2"></i>Support Utilisateur (GLPI)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
 
-                <div class="cv-column">
-                    <h3 class="cv-subtitle">Certifications</h3>
-                    <div class="cv-item">
-                        <h4>CompTIA Network+</h4>
-                        <p class="cv-meta">En cours de préparation</p>
-                        <p class="cv-description">Certification reconnue en administration système et support
-                            informatique</p>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm skill-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-success bg-opacity-10 text-success mb-3 mx-auto">
+                                <i class="bi bi-router fs-2"></i>
+                            </div>
+                            <h4 class="card-title">Réseaux & Sécurité</h4>
+                            <p class="card-text text-muted">Interconnexion et sécurisation des équipements.</p>
+                            <ul class="list-unstyled text-start bg-light p-3 rounded">
+                                <li><i class="bi bi-check2 text-success me-2"></i>Switching & Routing (Cisco)</li>
+                                <li><i class="bi bi-check2 text-success me-2"></i>VLAN, STP, OSPF</li>
+                                <li><i class="bi bi-check2 text-success me-2"></i>VPN & Pare-feu</li>
+                                <li><i class="bi bi-check2 text-success me-2"></i>Wireshark / Analyse de trames</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="cv-item">
-                        <h4>Cisco CCNA</h4>
-                        <p class="cv-meta">En cours de préparation</p>
-                        <p class="cv-description">Certification en réseau et routage</p>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm skill-card">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-box bg-warning bg-opacity-10 text-warning mb-3 mx-auto">
+                                <i class="bi bi-code-slash fs-2"></i>
+                            </div>
+                            <h4 class="card-title">Scripting & Web</h4>
+                            <p class="card-text text-muted">Automatisation de tâches et développement web.</p>
+                            <ul class="list-unstyled text-start bg-light p-3 rounded">
+                                <li><i class="bi bi-check2 text-warning me-2"></i>Python & Bash</li>
+                                <li><i class="bi bi-check2 text-warning me-2"></i>PowerShell</li>
+                                <li><i class="bi bi-check2 text-warning me-2"></i>HTML5 / CSS3 / JS</li>
+                                <li><i class="bi bi-check2 text-warning me-2"></i>Git / GitHub</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="experiences" class="portfolio">
+    <section id="projects" class="py-5 bg-light">
         <div class="container">
-            <h2 class="section-title">Expériences Professionnelles</h2>
-            <div class="portfolio-grid">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">Projets Techniques</h2>
+                <p class="text-muted">Projets réalisés en cours, en entreprise ou en autodidacte.</p>
+                <div class="header-line bg-primary mx-auto"></div>
+            </div>
 
-                <!-- Expérience 1 : 2i Informatique -->
-                <div class="portfolio-card">
-                    <div class="card-header">
-                        <h3>Stagiaire en Maintenance Informatique</h3>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-top">
+                        <div class="card-header bg-white border-bottom-0 pt-4">
+                            <span class="badge bg-primary">Système</span>
+                            <span class="badge bg-secondary">Lab</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Infrastructure Windows Server</h5>
+                            <p class="card-text">Mise en place d'un contrôleur de domaine, gestion des GPO, utilisateurs et services DNS/DHCP.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-4">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">Voir les détails</a>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <p><strong>2i Informatique</strong> | La Test-De-Buch | 2025 2 fois 1 mois</p>
-                        <p>
-                            <strong>Missions :</strong>
-                        <ul>
-                            <li>Configuration, réparation et montage d’ordinateurs.</li>
-                            <li>Installation de systèmes d’exploitation et des pilotes.</li>
-                            <li>Participation active au travail en équipe.</li>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-top">
+                        <div class="card-header bg-white border-bottom-0 pt-4">
+                            <span class="badge bg-success">Réseau</span>
+                            <span class="badge bg-danger">Sécurité</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Sécurisation Architecture Cisco</h5>
+                            <p class="card-text">Segmentation VLAN, configuration ACLs et mise en place de port security sur commutateurs Cisco.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-4">
+                            <a href="#" class="btn btn-outline-primary btn-sm w-100">Voir les détails</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm hover-top">
+                        <div class="card-header bg-white border-bottom-0 pt-4">
+                            <span class="badge bg-warning text-dark">Web</span>
+                            <span class="badge bg-info text-dark">Portfolio</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Portfolio Personnel</h5>
+                            <p class="card-text">Développement de ce site web vitrine pour présenter mes compétences et mon parcours professionnel.</p>
+                        </div>
+                        <div class="card-footer bg-white border-top-0 pb-4">
+                            <a href="https://github.com/verdoit-raphael" target="_blank" class="btn btn-outline-dark btn-sm w-100"><i class="bi bi-github me-1"></i>Voir sur GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="career" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h3 class="fw-bold mb-4"><i class="bi bi-briefcase me-2 text-primary"></i>Expériences Pro</h3>
+                    
+                    <div class="border-start border-2 border-primary ps-4 position-relative mb-4">
+                        <div class="position-absolute top-0 start-0 translate-middle bg-primary rounded-circle" style="width: 12px; height: 12px;"></div>
+                        <h5 class="fw-bold">Administrateur Système (Alternance)</h5>
+                        <p class="text-primary mb-1">Entreprise IT | Depuis Sept. 2024</p>
+                        <p class="text-muted small">Gestion de l'infrastructure, support utilisateurs N1/N2, maintenance des serveurs.</p>
+                    </div>
+
+                    <div class="border-start border-2 border-secondary ps-4 position-relative mb-4">
+                        <div class="position-absolute top-0 start-0 translate-middle bg-secondary rounded-circle" style="width: 12px; height: 12px;"></div>
+                        <h5 class="fw-bold">Stagiaire Maintenance Informatique</h5>
+                        <p class="text-primary mb-1">2i Informatique | 2025 (2 mois)</p>
+                        <ul class="text-muted small mb-0">
+                            <li>Configuration et montage d’ordinateurs.</li>
+                            <li>Installation OS et pilotes.</li>
                         </ul>
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">Maintenance</span>
-                            <span class="tag">Installation OS</span>
-                            <span class="tag">Travail d'équipe</span>
-                        </div>
+                    </div>
+
+                    <div class="border-start border-2 border-secondary ps-4 position-relative">
+                        <div class="position-absolute top-0 start-0 translate-middle bg-secondary rounded-circle" style="width: 12px; height: 12px;"></div>
+                        <h5 class="fw-bold">Stagiaire Diagnostic & Réparation</h5>
+                        <p class="text-primary mb-1">ADPC Bassin | 2024 (2 semaines)</p>
+                        <p class="text-muted small">Diagnostic de pannes et réparation électronique.</p>
                     </div>
                 </div>
 
-                <!-- Expérience 2 : ADPC Bassin -->
-                <div class="portfolio-card">
-                    <div class="card-header">
-                        <h3>Stagiaire en Diagnostic et Réparation</h3>
-                    </div>
-                    <div class="card-body">
-                        <p><strong>ADPC Bassin</strong> | La Test-De-Buch | 2024 2 Semaines</p>
-                        <p>
-                            Missions :
-                        <ul>
-                            <li>Réparation d'appareils électroniques (TV, Cafetière, Casque Infra-Rouges).</li>
-                            <li>Développement de l'autonomie, de la patience et de la persévérance dans le diagnostic de
-                                pannes.</li>
-                            <li>Acquisition d'une méthodologie de dépannage et de précision.</li>
-                        </ul>
-                        </p>
-                        <div class="card-tags">
-                            <span class="tag">Dépannage</span>
-                            <span class="tag">Autonomie</span>
-                            <span class="tag">Diagnostic</span>
+                <div class="col-lg-6">
+                    <h3 class="fw-bold mb-4"><i class="bi bi-mortarboard me-2 text-primary"></i>Formation</h3>
+                    
+                    <div class="card mb-3 border-0 bg-light">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">BTS SIO - Option SISR</h5>
+                                <span class="badge bg-primary">En cours</span>
+                            </div>
+                            <p class="text-muted small mb-0">Lycée Professionnel | 2025 - 2027</p>
+                            <p class="small mt-2">Services Informatiques aux Organisations, spécialisation Infrastructure.</p>
                         </div>
                     </div>
-                </div>
 
+                    <div class="card mb-3 border-0 bg-light">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <h5 class="fw-bold mb-0">Bac Pro Systèmes Numériques</h5>
+                                <span class="badge bg-success">Obtenu</span>
+                            </div>
+                            <p class="text-muted small mb-0">Lycée Professionnel | 2022 - 2025</p>
+                            <p class="small mt-2">Mention Bien.</p>
+                        </div>
+                    </div>
+                    
+                    <h4 class="fw-bold mt-4 mb-3"><i class="bi bi-award me-2 text-primary"></i>Certifications</h4>
+                    <div class="d-flex gap-2 flex-wrap">
+                        <span class="badge rounded-pill text-bg-dark p-2">ANSSI SecNumAcadémie</span>
+                        <span class="badge rounded-pill text-bg-secondary p-2">Pix (En cours)</span>
+                        <span class="badge rounded-pill text-bg-secondary p-2">Cisco CCNA (Préparation)</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="py-5 bg-dark text-white">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Informations de Contact</h3>
-                    <div class="contact-item">
-                        <span class="contact-label">Email:</span>
-                        <a href="mailto:raphael.verdoit@mailfence.com">raphael.verdoit[at]mailfence[dot]com</a>
-                    </div>
-
-                    <div class="contact-item">
-                        <span class="contact-label">Localisation:</span>
-                        <span>France</span>
-                    </div>
-                    <!--                <div class="contact-item">
-                        <span class="contact-label">LinkedIn:</span>
-                        <a href="https://linkedin.com" target="_blank">linkedin.com/in/jeandupont</a>
-                    </div> -->
-                    <div class="contact-item">
-                        <span class="contact-label">GitHub:</span>
-                        <a href="https://github.com/verdoit-raphael" target="_blank">github.com/verdoit-raphael</a>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold mb-4">Me Contacter</h2>
+                    <p class="mb-5 text-white-50">Intéressé par mon profil ou une collaboration ? N'hésitez pas à m'envoyer un message.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <form id="contactForm">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="name" placeholder="Votre Nom" required>
+                            <label for="name" class="text-dark">Nom</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                            <label for="email" class="text-dark">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" placeholder="Votre message" id="message" style="height: 150px" required></textarea>
+                            <label for="message" class="text-dark">Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100 py-3 fw-bold">Envoyer le message</button>
+                    </form>
+                    <div class="text-center mt-4">
+                        <a href="mailto:raphael.verdoit@mailfence.com" class="text-white text-decoration-none me-4">
+                            <i class="bi bi-envelope-at me-2"></i>raphael.verdoit@mailfence.com
+                        </a>
+                        <a href="https://github.com/verdoit-raphael" target="_blank" class="text-white text-decoration-none">
+                            <i class="bi bi-github me-2"></i>GitHub
+                        </a>
                     </div>
                 </div>
-
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name">Nom</label>
-                        <input type="text" id="name" name="name" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Sujet</label>
-                        <input type="text" id="subject" name="subject" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Envoyer</button>
-                    <p class="form-note">Note: Ce formulaire est une démonstration.</p>
-                </form>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
+    <footer class="bg-black text-white py-4 text-center">
         <div class="container">
-            <p>&copy; 2025 Verdoit Raphaël. Tous droits réservés.</p>
+            <p class="mb-0 small">&copy; 2025 Raphaël Verdoit. Tous droits réservés.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
-
 </html>
